@@ -1,0 +1,18 @@
+model:
+  checkpoint: null
+
+sample:
+  protocol: direct
+  seed: 2023
+  batch_size: 128
+  num_mols: 100
+  mode: test
+  max_cases: 100
+  atom_count_num_bins: 3
+  save_raw_candidates: false
+  save_raw_sdf: false
+
+data:
+  name: protein_ligand
+  path: data/crossdocked_v1.1_rmsd1.0_pocket10_processed.lmdb
+  split: data/crossdocked_pocket10_pose_split.pt

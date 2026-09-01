@@ -1,0 +1,26 @@
+sample_path: sample_outputs/full_adaptive
+record_filename: joint_samples.pt
+result_path: eval_results/full_adaptive
+reference_cache: data/crossdocked_eval_reference_cache.pkl
+verbose: false
+eval_num_examples: null
+save: true
+protein_root: raw_data/crossdocked_v1.1_rmsd1.0_pocket10
+dataset: crossdocked
+docking_mode: vina_dock
+eval_mode: all
+exhaustiveness: 16
+evaluate_reference_docking: true
+
+data:
+  name: protein_ligand
+  path: data/crossdocked_v1.1_rmsd1.0_pocket10_processed.lmdb
+  split: data/crossdocked_pocket10_pose_split.pt
+
+top_k: 10
+topk_filter:
+  enabled: true
+
+phore_match_distance_threshold: 1.5
+phore_direction_cosine_threshold: 0.7
+phore_assignment_probability_threshold: 0.5
