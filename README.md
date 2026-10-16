@@ -24,9 +24,9 @@ python -m pip install git+https://github.com/Valdes-Tresanco-MS/AutoDockTools_py
 
 ## Data preparation
 
-1. The "data" folder contains model training and evaluation datasets, along with case studies focusing on protein kinases TRF1 and USP1. Download the processed dataset form this [link](https://drive.google.com/file/d/1xeAXQ9Ei9Tu__36hZgqILiBsOY73ToLf/view?usp=drive_link).
+1. The "data" folder contains model training and evaluation datasets, along with case studies focusing on protein kinases TRF1 and USP1. Download the processed dataset form this [link](https://drive.google.com/file/d/1xeAXQ9Ei9Tu__36hZgqILiBsOY73ToLf/view?).
 
-2. If you want to process the dataset from scratch, you need to download crossdocked_v1.1_rmsd1.0_pocket10 [here](https://drive.google.com/file/d/1Uk7R-04_dbHMQlY62sYlThILs7MBmW9V/view?usp=drive_link). Run preprocess_crossdocked to process the data.
+2. If you want to process the dataset from scratch, you need to download crossdocked_v1.1_rmsd1.0_pocket10 [here](https://drive.google.com/file/d/1Uk7R-04_dbHMQlY62sYlThILs7MBmW9V/view?). Run preprocess_crossdocked to process the data.
 
 ```bash
 python -m datasets.preprocess_crossdocked \
@@ -49,7 +49,7 @@ python generate_strict_split.py \
 python train.py --config configs/train.yml --device cuda:0
 ```
 
-The trained model checkpoints can be downloaded from here [link](https://drive.google.com/file/d/1zWdBrgq10xwCIbmxrPrcCkBAk_DkDeyw/view?usp=drive_link).
+The trained model checkpoints can be downloaded from here [link](https://drive.google.com/file/d/1zWdBrgq10xwCIbmxrPrcCkBAk_DkDeyw/view?).
 
 ## Sampling
 
@@ -85,4 +85,4 @@ python evaluate.py \
 
 ## Generated Molecules of PADiff
 
-The generated molecular can be downloaded from here [link](https://drive.google.com/file/d/1uM7pZvQhEznPOhdJ79iFPu8XxDUY-E1R/view?usp=drive_link).
+The generated molecular can be downloaded from here [link](https://drive.google.com/file/d/1uM7pZvQhEznPOhdJ79iFPu8XxDUY-E1R/view?).
