@@ -1,15 +1,8 @@
-# PADiff: Function-aware pocket-conditioned molecular generation by joint ligand–pharmacophore diffusion
+# PADiff
 
 ![Overview](figure/1a.png)
 ![Overview](figure/1b.png)
 ![Overview](figure/1cd.png)
-
-PADiff is a pocket-conditioned joint ligand-pharmacophore diffusion model for
-structure-based molecular design. Given a processed protein pocket, it jointly
-denoises ligand atom coordinates and types, candidate bond states, and six-class
-pharmacophore centers and types. An equivariant orientation head predicts
-directional pharmacophores, while a pharmacophore-atom realization head links
-the generated functional features to the ligand atoms that can realize them.
 
 ## Environment
 
